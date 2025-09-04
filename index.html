@@ -12,19 +12,24 @@
 </head>
 
 <body>
+    <div onclick="esconder_result()" class="mascara-result"></div>
 
     <img src="img/Mega Sorteio.gif" alt="logo-mega-sorteio">
 
-    <p>Sortear <input class="luckynumbers" type="number" value="1"> Número(s)</p>
+    <p>Sortear <input class="amount" type="number" value="1"> Número(s)</p>
 
     <p>Entre <input class="min" type="number" value="1"> e <input class="max" type="number" value="100"></p>
 
-    <button onclick="draw()">Sortear</button>
+    <button onclick="drawn()">Sortear</button>
 
     <p3>Copyright © 2025 - By <a href="https://www.linkedin.com/in/clemergheno97/" target="_blank">Clemer Gheno</a></p3>
 
-    <script src="script.js"></script>
+    <div class="result-screen">
+        <h1>Seu número sorteado é:</h1>
+        <p class="luckyn-numbers"></p>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
