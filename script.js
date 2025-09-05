@@ -1,6 +1,6 @@
 function drawn() {
     // Pegando os valores dentro da função para garantir que eles sejam atualizados
-    const amount = parseInt(document.querySelector(".drawn").value);
+    const amount = parseInt(document.querySelector(".amount").value);
     const min = parseInt(document.querySelector(".min").value);
     const max = parseInt(document.querySelector(".max").value);
 
@@ -13,7 +13,8 @@ function drawn() {
     // Verificando se o valor mínimo é maior ou igual ao valor máximo
     if (min >= max) {
         alert("O valor mínimo deve ser menor que o valor máximo.");
-    } else {
+    }
+    else {
         // Criamos um array para armazenar os números sorteados
         const numbersDrawn = [];
         // Um loop que se repete 'drawn' vezes
